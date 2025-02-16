@@ -5,7 +5,12 @@
   <a-scene embedded arjs='debugUIEnabled: false'>
    <!-- MARKER -->
     <a-marker preset='hiro'>
-     <a-box position='0 0.5 0' material='color: yellow;'></a-box>
+     <!-- Caricamento del modello 3D -->
+        <a-entity 
+          gltf-model='https://mcmaniak98.github.io/Wakanda_AR/assets/ufficio.glb' 
+          position='0 0 0' 
+          scale='0.2 0.2 0.2'>
+        </a-entity>
     </a-marker>
    <!-- CAMERA -->
    <a-entity camera></a-entity>
